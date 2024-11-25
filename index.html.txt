@@ -3,124 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zuri - Mobile Massage Therapy</title>
+    <title>Zuri Mobile Massage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #00695c;
             color: white;
-            padding: 20px 10%;
+            padding: 20px 10px;
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
         }
         nav {
-            text-align: center;
-            background: #34495e;
+            display: flex;
+            justify-content: center;
+            background: #004d40;
             padding: 10px 0;
         }
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            padding: 20px 10%;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
         .hero {
             text-align: center;
-            padding: 50px 10%;
-            background: #ecf0f1;
+            padding: 50px 20px;
+            background: url('zuri-massage-bg.jpg') no-repeat center center/cover;
+            color: white;
         }
-        .hero h2 {
-            color: #2c3e50;
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
         }
         .hero p {
+            font-size: 1.2em;
+        }
+        .section {
             margin: 20px 0;
-            font-size: 18px;
-            color: #7f8c8d;
         }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service-item {
-            flex: 1 1 calc(33.333% - 20px);
-            background: #f7f9f9;
-            border: 1px solid #dcdde1;
-            border-radius: 8px;
+        .services, .testimonials, .contact {
+            background: white;
             padding: 20px;
-            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background: #2c3e50;
-            color: white;
+        .services h2, .testimonials h2, .contact h2 {
+            color: #00695c;
+        }
+        .footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
+            background: #004d40;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Zuri</h1>
-        <p>Experience wellness wherever you are</p>
-    </header>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+    <h1>Zuri Mobile Massage</h1>
+    <p>Your relaxation, anywhere and anytime.</p>
+</header>
 
-    <section class="hero">
-        <h2>Welcome to Zuri</h2>
-        <p>Your trusted platform for mobile massage therapy. Relax, rejuvenate, and heal from the comfort of your home.</p>
-    </section>
+<nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section class="container" id="services">
+<div class="container">
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Relax with Zuri</h1>
+        <p>Experience premium massage therapy brought to your home, office, or hotel. We ensure ultimate relaxation tailored to your needs.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section services">
         <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-item">
-                <h3>Swedish Massage</h3>
-                <p>A relaxing, full-body massage to relieve stress and tension.</p>
-            </div>
-            <div class="service-item">
-                <h3>Deep Tissue Massage</h3>
-                <p>Focused therapy for chronic muscle pain and stiffness.</p>
-            </div>
-            <div class="service-item">
-                <h3>Hot Stone Massage</h3>
-                <p>Relax with the soothing warmth of heated stones.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container" id="about">
-        <h2>About Us</h2>
-        <p>Zuri is a mobile massage therapy platform designed to bring relaxation and healing to your doorstep. Our certified therapists ensure top-quality service tailored to your needs.</p>
-    </section>
-
-    <section class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to book an appointment? Reach out to us:</p>
         <ul>
-            <li>Email: info@zuri.com</li>
-            <li>Phone: +254 700 123 456</li>
+            <li>Swedish Massage</li>
+            <li>Deep Tissue Massage</li>
+            <li>Aromatherapy Massage</li>
+            <li>Hot Stone Massage</li>
+            <li>Prenatal Massage</li>
         </ul>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Zuri - Mobile Massage Therapy. All rights reserved.</p>
-    </footer>
+    <!-- About Section -->
+    <div id="about" class="section about">
+        <h2>About Zuri Mobile Massage</h2>
+        <p>Zuri Mobile Massage is dedicated to providing world-class massage services directly to you. Our certified therapists bring the perfect blend of expertise and care, ensuring that every session leaves you refreshed and rejuvenated.</p>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="section testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            "The massage was heavenly! Zuri Mobile Massage exceeded my expectations. I highly recommend their services."
+        </blockquote>
+        <p>- Jane Doe</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Call or WhatsApp: <a href="tel:+254712345678">+254 712 345 678</a></p>
+        <p>Email: <a href="mailto:info@zurimobilemassage.com">info@zurimobilemassage.com</a></p>
+        <p>Follow us on social media:  
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Zuri Mobile Massage. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
